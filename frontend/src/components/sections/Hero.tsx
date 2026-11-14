@@ -75,21 +75,21 @@ export default function Hero() {
         </p>
 
         <h1>
-          Discover the joy
+          Let's Take You Around Cape,
           <br />
-          of travelling
-          <br />
-          <span>Beautifully.</span>
+          <span>Beautifully Connected.</span>
         </h1>
 
         <p className="hero-description">
-          From airport arrivals to unforgettable getaways, experience
-          thoughtfully arranged transport with comfort, care and the warmth of
-          African hospitality.
+          From airport transfers, hotel and private transfers, wine tours, city
+          sightseeing, Garden Route adventures, safari and game drive
+          experiences, to chauffeur services, event transportation and private
+          tours, Jambinno Shuttles connects you to every destination with
+          comfort, reliability and the warmth of African hospitality.
         </p>
 
         <div className="hero-actions">
-          <a href="#booking" className="button button-gold">
+          <a href="/booking" className="button button-gold">
             Book Your Journey <span>↗</span>
           </a>
 

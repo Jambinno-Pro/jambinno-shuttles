@@ -103,16 +103,16 @@ export default function Services() {
           <div>
             <p className="eyebrow">HOW WE MOVE YOU</p>
             <h2 className="section-title">
-              Journeys designed
+              More Than a Ride.
               <br />
-              <span className="gold-text">around you.</span>
+              <span className="gold-text">A Journey to Remember.</span>
             </h2>
           </div>
 
           <p className="section-intro">
-            From seamless airport arrivals to unforgettable African experiences,
-            discover transport services designed around your comfort,
-            convenience and journey.
+            From convenient airport pickups and private transfers to scenic
+            tours, safari adventures and special occasions, we make every
+            journey comfortable, seamless and memorable.
           </p>
         </div>
 
@@ -155,7 +155,7 @@ export default function Services() {
                   })}
                 </ul>
 
-                <a href="#booking" className="service-link">
+                <a href="/booking" className="service-link">
                   Book This Service
                   <span>→</span>
                 </a>

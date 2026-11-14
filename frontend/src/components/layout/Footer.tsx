@@ -19,9 +19,12 @@ export default function Footer() {
           />
 
           <p>
-            Your journey. Our priority.
+            Inspired by Swahili word Twende — “Let’s Go”
             <br />
-            Personalised transport, inspired by African hospitality.
+            Our brand represents movement, discovery and the excitement of
+            exploring new destinations. Based in Cape Town, South Africa, we are
+            dedicated to connecting people with places, experiences and
+            opportunities through thoughtfully arranged transport services.
           </p>
         </div>
 

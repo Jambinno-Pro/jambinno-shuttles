@@ -17,10 +17,7 @@ export default function BookingCTA() {
           solution that suits your journey.
         </p>
 
-        <a
-          href="mailto:info@jambinnoshuttles.co.za?subject=Transport%20Enquiry"
-          className="journey-cta-button"
-        >
+        <a href="/contact" className="journey-cta-button">
           Enquire About a Journey <span>↗</span>
         </a>
 
