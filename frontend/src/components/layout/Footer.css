@@ -1,0 +1,241 @@
+/* =========================================================
+   JAM BINNO SHUTTLE SERVICES
+   FOOTER
+========================================================= */
+
+.site-footer {
+  position: relative;
+  background: #111b30;
+  color: #ffffff;
+  padding: 75px 0 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* BRAND COLOUR ACCENT */
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #2b50ae 0%,
+    #2b50ae 45%,
+    #e99f11 45%,
+    #e99f11 75%,
+    #f3c80a 75%,
+    #f3c80a 100%
+  );
+}
+
+/* MAIN FOOTER CONTENT */
+.footer-main,
+.footer-bottom {
+  width: min(1280px, calc(100% - 100px));
+  margin-inline: auto;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1.1fr 1fr;
+  gap: 35px;
+  padding-bottom: 65px;
+  align-items: start;
+}
+
+/* BRAND */
+.footer-brand {
+  max-width: 390px;
+}
+
+.footer-logo {
+  display: block;
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 22px;
+}
+
+.footer-brand p {
+  color: #b9c2d3;
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+/* FOOTER COLUMNS */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer-column h4 {
+  color: #f3c80a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 10px;
+}
+
+.footer-column a,
+.footer-column span {
+  color: #b9c2d3;
+  font-size: 14px;
+  line-height: 1.6;
+  transition: color 0.25s ease;
+}
+
+.footer-column a:hover {
+  color: #e99f11;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  min-height: 75px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: #8793a8;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.footer-bottom span {
+  color: #e99f11;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .footer-main {
+    grid-template-columns: 1.4fr 1fr;
+    gap: 50px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .site-footer {
+    padding-top: 55px;
+  }
+
+  .footer-main,
+  .footer-bottom {
+    width: calc(100% - 40px);
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 45px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    min-height: auto;
+    padding: 22px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-bottom p {
+    font-size: 11px;
+  }
+}
+
+/* APP DOWNLOAD SECTION */
+
+.footer-app-column > p {
+  max-width: 230px;
+  margin: 0 0 15px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.footer-app-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 175px;
+  margin-bottom: 10px;
+  padding: 10px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-app-link:hover {
+  border-color: #e99f11;
+  background: rgba(233, 159, 17, 0.1);
+  transform: translateY(-2px);
+}
+
+.footer-app-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #e99f11;
+  color: #17243a;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.footer-app-link > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer-app-link small {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 9px;
+}
+
+.footer-app-link strong {
+  font-size: 12px;
+}
+
+/* FOOTER RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

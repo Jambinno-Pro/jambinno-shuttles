@@ -1,0 +1,206 @@
+/* =================================
+   JOURNEY BOOKING CTA
+================================= */
+
+.journey-cta-section {
+  position: relative;
+  display: block;
+  isolation: isolate;
+  width: 100%;
+  margin: 0;
+  padding: 110px 20px;
+  background-color: #e99f11;
+  overflow: hidden;
+}
+
+/* DECORATIVE CIRCLES */
+
+.journey-cta-section::before {
+  content: "";
+  position: absolute;
+  top: -180px;
+  right: -120px;
+  width: 550px;
+  height: 550px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.journey-cta-section::after {
+  content: "";
+  position: absolute;
+  bottom: -250px;
+  left: -120px;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* CONTENT */
+
+.journey-cta-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* EYEBROW */
+
+.journey-cta-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 0 22px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.journey-cta-eyebrow::before,
+.journey-cta-eyebrow::after {
+  content: "";
+  width: 25px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* TITLE */
+
+.journey-cta-title {
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.journey-cta-title span {
+  color: #172033;
+}
+
+/* DESCRIPTION */
+
+.journey-cta-description {
+  max-width: 570px;
+  margin: 0 auto 32px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* BUTTON */
+
+.journey-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 55px;
+  padding: 0 28px;
+
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+
+  color: #172033;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.journey-cta-button span {
+  font-size: 17px;
+  transition: transform 0.3s ease;
+}
+
+.journey-cta-button:hover {
+  background: #172033;
+  border-color: #172033;
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(23, 32, 51, 0.18);
+}
+
+.journey-cta-button:hover span {
+  transform: translate(3px, -3px);
+}
+
+/* BOOKING NOTE */
+
+.journey-cta-note {
+  display: block;
+  margin-top: 23px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+  .journey-cta-section {
+    padding: 85px 20px;
+  }
+
+  .journey-cta-title {
+    font-size: 46px;
+  }
+
+  .journey-cta-description {
+    font-size: 14px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .journey-cta-section {
+    padding: 70px 18px;
+  }
+
+  .journey-cta-eyebrow {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .journey-cta-title {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .journey-cta-description {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .journey-cta-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 0 18px;
+    font-size: 12px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-cta-button,
+  .journey-cta-button span {
+    transition: none;
+  }
+}
