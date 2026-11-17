@@ -1,0 +1,304 @@
+/* =========================================
+   ADMIN REGISTRATION PAGE
+========================================= */
+
+.admin-auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(43, 80, 174, 0.2), transparent 35%),
+    radial-gradient(
+      circle at 85% 85%,
+      rgba(233, 159, 17, 0.08),
+      transparent 30%
+    ),
+    #111b30;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================
+   REGISTRATION CARD
+========================================= */
+
+.admin-auth-card {
+  width: 100%;
+  max-width: 540px;
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.admin-auth-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf2ff;
+  color: #2b50ae;
+  border: 1px solid #e1e9ff;
+  border-radius: 15px;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.admin-auth-eyebrow {
+  margin: 0;
+  text-align: center;
+  color: #e99f11;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.admin-auth-card h1 {
+  margin: 10px 0 25px;
+  text-align: center;
+  color: #111b30;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.admin-auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-auth-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 15px;
+}
+
+.admin-auth-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+/* Labels */
+
+.admin-auth-form-group label {
+  color: #253149;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* Inputs */
+
+.admin-auth-form-group input {
+  width: 100%;
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid #e0e5ed;
+  border-radius: 8px;
+  outline: none;
+  background: #f8fafc;
+  color: #111b30;
+  font-size: 12px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.admin-auth-form-group input::placeholder {
+  color: #a0a8b5;
+}
+
+.admin-auth-form-group input:focus {
+  border-color: #2b50ae;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(43, 80, 174, 0.08);
+}
+
+/* =========================================
+   PASSWORD VISIBILITY
+========================================= */
+
+.admin-password-field {
+  position: relative;
+  width: 100%;
+}
+
+.admin-password-field input {
+  padding-right: 42px !important;
+}
+
+.admin-password-field button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #8a94a5;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.admin-password-field button:hover {
+  color: #2b50ae;
+}
+
+/* =========================================
+   CREATE ADMIN BUTTON
+========================================= */
+
+.admin-auth-submit {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: none;
+  border-radius: 8px;
+  background: #2b50ae;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(43, 80, 174, 0.15);
+  transition: all 0.2s ease;
+}
+
+.admin-auth-submit:hover {
+  background: #1c397f;
+  box-shadow: 0 8px 20px rgba(43, 80, 174, 0.25);
+  transform: translateY(-1px);
+}
+
+.admin-auth-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================================
+   ERROR & SUCCESS MESSAGES
+========================================= */
+
+.admin-auth-error,
+.admin-auth-success {
+  padding: 11px 13px;
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.admin-auth-error {
+  background: #fff1f0;
+  border: 1px solid #ffd9d6;
+  color: #b42318;
+}
+
+.admin-auth-success {
+  background: #edf9f0;
+  border: 1px solid #d3f0dc;
+  color: #18753c;
+}
+
+/* =========================================
+   SIGN IN FOOTER
+========================================= */
+
+.admin-auth-footer {
+  margin: 22px 0 0;
+  text-align: center;
+  color: #8992a2;
+  font-size: 12px;
+}
+
+.admin-auth-footer a {
+  color: #2b50ae;
+  font-weight: 800;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.admin-auth-footer a:hover {
+  color: #e99f11;
+}
+
+/* =========================================
+   SECURITY FOOTER
+========================================= */
+
+.admin-auth-security {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #edf0f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #98a1af;
+  font-size: 10px;
+}
+
+/* =========================================
+   LOADING SPINNER
+========================================= */
+
+.admin-spinner {
+  animation: adminSpin 1s linear infinite;
+}
+
+@keyframes adminSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 520px) {
+  .admin-auth-page {
+    padding: 18px;
+  }
+
+  .admin-auth-card {
+    padding: 28px 22px;
+    border-radius: 14px;
+  }
+
+  .admin-auth-card h1 {
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+
+  .admin-auth-form-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

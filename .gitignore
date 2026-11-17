@@ -1,0 +1,43 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/appsettings.*.json
+!**/appsettings.json
+!**/appsettings.Development.json
+**/secrets.json
+
+# Node.js
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/appsettings.json
+**/appsettings.*.json
+**/secrets.json
+**/Properties/launchSettings.json

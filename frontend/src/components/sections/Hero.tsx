@@ -93,7 +93,7 @@ export default function Hero() {
             Book Your Journey <span>↗</span>
           </a>
 
-          <a href="#services" className="hero-secondary-link">
+          <a href="/services" className="hero-secondary-link">
             Discover Our Services <span>↓</span>
           </a>
         </div>
